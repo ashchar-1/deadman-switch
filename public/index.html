@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.O.S. Guardian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <header>
+            <h1>S.O.S. GUARDIAN</h1>
+            <p>Sistema de Respaldo Ante Emergencias</p>
+        </header>
+
+        <section class="status-card">
+            <div id="status-light" class="light status-off"></div>
+            <p id="status-text">Sistema Inactivo</p>
+        </section>
+
+        <section class="controls">
+            <button id="btn-panic" class="btn btn-danger">ACTIVAR MODO SISMO (5 min)</button>
+            <button id="btn-safe" class="btn btn-success" disabled>ESTOY A SALVO (DESARMAR)</button>
+        </section>
+
+        <footer>
+            <p id="gps-display">Esperando señal GPS...</p>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
